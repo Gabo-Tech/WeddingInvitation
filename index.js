@@ -1,5 +1,6 @@
 //jshint esversion:6
 const express = require("express");
+const accepts = require('accepts');
 const bodyParser = require("body-parser");
 const _ = require("lodash");
 const path = require('path');
@@ -12,13 +13,28 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const items = ["Welcome to your todo list!", "Hit the + button to add a new item.", "<-- Hit this to delete an item."];
-const lists = { "Today": items };
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
-    res.render('index', { isPlural: false, params: [] });
+    const accept = accepts(req);
+    const userLang = accept.language(['en', 'es', 'ca', 'nl', 'pt']); // List the languages you support
+    switch (userLang) {
+        case 'en':
+          res.render('index_en', { isPlural: false, params: [] }); // Render the English version of the HTML file
+          break;
+        case 'ca':
+          res.render('index_ca', { isPlural: false, params: [] }); // Render the Catalan version of the HTML file
+          break;
+        case 'nl':
+          res.render('index_nl', { isPlural: false, params: [] }); // Render the Dutch version of the HTML file
+          break;
+        case 'pt':
+          res.render('index_pt', { isPlural: false, params: [] }); // Render the Portuguese version of the HTML file
+          break;
+        default:
+            res.render('index', { isPlural: false, params: [] }); // Render the Spanish version (default) of the HTML file
+      }
+    
 });
 
 app.get('/:params/:plural', function (req, res) {
