@@ -65,8 +65,36 @@
                 </div>
               </div>
             </nav>
-            <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(/images/img_bg_2.jpg);"
-              data-stellar-background-ratio="0.5">
+            <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(/images/img_bg_2.jpg); background-size: cover; background-position: top center; background-repeat: no-repeat; position: relative;">
+              <style>
+                /* Mobile devices */
+                @media only screen and (max-width: 768px) {
+                  #fh5co-header.fh5co-cover {
+                    background-position: -341px 0px !important;
+                  }
+                }
+          
+                /* Tablets */
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                  #fh5co-header.fh5co-cover {
+                    background-position: -341px 0px !important;
+                  }
+                }
+          
+                /* Landscape tablets */
+                @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+                  #fh5co-header.fh5co-cover {
+                    background-position: -341px 0px !important;
+                  }
+                }
+          
+                /* Desktops and laptops */
+                @media only screen and (min-width: 1366px) {
+                  #fh5co-header.fh5co-cover {
+                    background-position: center center !important;
+                  }
+                }
+              </style>
               <div class="overlay"></div>
               <div class="container">
                 <div class="row">
@@ -110,32 +138,46 @@
                 </div>
                 <div class="couple-wrap animate-box">
                   <div class="couple-half">
-                    <div class="bride">
-                      <img src="/images/bride.jpg" alt="groom" class="img-responsive">
+
+                    <div class="groom">
+                      <img src="/images/bride.jpg" alt="bride" class="img-responsive">
                     </div>
-                    <div class="desc-bride">
+                    <div class="desc-groom">
                       <h3>Isaura Diaz</h3>
                       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                         there live the blind texts. Separated they live in Bookmarksgrove
                       </p>
                     </div>
+
+               
                   </div>
                   <p class="heart text-center"><i class="icon-heart2"></i></p>
                   <div class="couple-half">
-                    <div class="groom">
+
+                    <div class="bride">
                       <img src="/images/groom.jpg" alt="groom" class="img-responsive">
                     </div>
-                    <div class="desc-groom">
+                    <div class="desc-bride">
                       <h3>Gabriel Clemente</h3>
                       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                         there live the blind texts. Separated they live in Bookmarksgrove
                       </p>
                     </div>
+
+                
                   </div>
                 </div>
               </div>
             </div>
-            <div id="fh5co-event" class="fh5co-bg" style="background-image:url(/images/img_bg_3.jpg);">
+            <div id="fh5co-event" class="fh5co-bg" style="background-image:url(/images/img_bg_3.jpg); background-size: cover; background-position: top center; background-repeat: no-repeat; position: relative;">
+              <style>
+                /* Mobile devices */
+                @media only screen and (max-width: 768px) {
+                  #fh5co-event.fh5co-bg {
+                    background-position: -1206px 0px !important;
+                  }
+                }
+              </style>
               <div class="overlay"></div>
               <div class="container">
                 <div class="row">
@@ -195,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/gifboda.gif),url(images/img_bg_6.jpg);">
+            <div id="fh5co-started" class="fh5co-bg" style="background-image:url(/images/gifboda.gif),url(/images/img_bg_6.jpg);">
               <div class="overlay"></div>
               <% if (isFamily) { %>
               <div class="container">
