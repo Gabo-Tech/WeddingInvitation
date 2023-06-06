@@ -1052,13 +1052,17 @@ form {
 .couple-half{
 	width: 50%;
 	float: left;
+	h3{	
+		font-size: 150px !important;
+		font-weight: bolder !important;
+	}	
 	@media screen and (max-width: $screen-sm){
 		width: 100%;
 	}
 	h3{
 		font-family: $font-secondary;
 		color: $brand-primary;
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.groom,.bride{
 		float: left;

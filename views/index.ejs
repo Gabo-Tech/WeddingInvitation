@@ -133,7 +133,7 @@
                     <% } else { %>
                     <h3>¡Es un placer poder invitarte a nuestra boda!</h3>
                     <% } %>
-                    <p>16 de Junio de 2023, Valéncia, España</p>
+                    <p>4 de Agosto de 2023, Valéncia, España</p>
                   </div>
                 </div>
                 <div class="couple-wrap animate-box">
@@ -143,10 +143,7 @@
                       <img src="/images/bride.jpg" alt="bride" class="img-responsive">
                     </div>
                     <div class="desc-groom">
-                      <h3>Isaura Diaz</h3>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                        there live the blind texts. Separated they live in Bookmarksgrove
-                      </p>
+                      <h3>Isaura Diaz Rangel</h3>
                     </div>
 
                
@@ -158,10 +155,7 @@
                       <img src="/images/groom.jpg" alt="groom" class="img-responsive">
                     </div>
                     <div class="desc-bride">
-                      <h3>Gabriel Clemente</h3>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                        there live the blind texts. Separated they live in Bookmarksgrove
-                      </p>
+                      <h3>Gabriel Clemente Ramos</h3>
                     </div>
 
                 
@@ -195,18 +189,19 @@
                             <h3>Ceremonia</h3>
                             <div class="event-col">
                               <i class="icon-clock"></i>
-                              <span>4:00 PM</span>
-                              <span>6:00 PM</span>
+                              <span>18:00</span>
+                              <span>19:00</span>
                             </div>
                             <div class="event-col">
                               <i class="icon-calendar"></i>
-                              <span>Viernes 16</span>
-                              <span>Junio, 2023</span>
+                              <span>Viernes 4</span>
+                              <span>Agosto, 2023</span>
                             </div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                              Consonantia, there live the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                            </p>
+                            <% if (isFamily) { %>
+                                  <p>La ceremonia será en el Jardín Mediterráneo con sus fuentes y gran variedad de plantas aromáticas es el lugar perfecto donde celebrar nuestra boda, aquí será el cóctel de bienvenida después de la ceremonia, se accede directamente desde el parking por las puertas grandes, no tiene perdida.</p>
+                              <% } else { %>
+                                <p>La ceremonia será emitida por Jira así que esperamos poder <% if (isPlural) { %>veros y responder vuestros<% } else { %>verte y responder tus<% } %> comentarios, obviamente más tarde cuando terminemos de celebrarlo, ¡muchas grácias!</p>
+                              <% } %>
                           </div>
                         </div>
                         <% if (isFamily) { %>
@@ -215,18 +210,15 @@
                             <h3>Convite</h3>
                             <div class="event-col">
                               <i class="icon-clock"></i>
-                              <span>7:00 PM</span>
-                              <span>12:00 AM</span>
+                              <span>20:00</span>
+                              <span>22:00</span>
                             </div>
                             <div class="event-col">
                               <i class="icon-calendar"></i>
-                              <span>Viernes 16</span>
-                              <span>Junio, 2023</span>
+                              <span>Viernes 4</span>
+                              <span>Agosto, 2023</span>
                             </div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                              Consonantia, there live the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                            </p>
+                            <p>El convite será en el Salón Azul es un salón de estilo clásico, inspirado en la antigua Grecia. Consta de tapices y cúpulas azules, que junto a sus lámparas de araña ofrecen un ambiente distinguido que nos ha enamorado. Se accede directamente desde el jardín, por las puertas a mano derecha y todo recto</p>
                           </div>
                         </div>
                         <% } else { %>
@@ -237,6 +229,30 @@
                 </div>
               </div>
             </div>
+            <% if (isFamily) { %>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4334584306298!2d-0.4082468175694906!3d39.390924432999626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604c3226d83549%3A0xbcb717f4dd1b6fb3!2sMediterr%C3%A1neo%20Restaurant%20i%20Salons!5e0!3m2!1sen!2sfr!4v1686064067940!5m2!1sen!2sfr" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300rem" width="100%" allowfullscreen></iframe>
+            <% } %>
+            <% if (isFamily) { %>
+            <div id="fh5co-couple">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                    <div id="invitation"></div>
+                    <% if (isPlural) { %>
+                    <h2>¡Quremos que estéis con nosotros!</h2>
+                    <% } else { %>
+                    <h2>¡Quremos que estés con nosotros!</h2>
+                    <% } %>
+                    <% if (isPlural) { %>
+                      <h3>Os extendemos una cordial invitación porque sois personas importantes para nosotros y queremos compartir este momento tan especial con vosotros. <br/><br/>Para nosotros, lo más importante es poder disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada. <br/><br/>¡Vuestra presencia es lo que realmente deseamos! <br/><br/>Además, os pedimos amablemente que evitéis usar el color azul rey, ya que lo hemos reservado para un detalle especial. Esperamos veros a todos radiantes y elegantes. <br/><br/>¡Os queremos y por eso deseamos compartir este día tan especial con vosotros!</h3>
+                      <% } else { %>
+                      <h3>Te extendemos una cordial invitación porque eres una persona importante para nosotros y queremos compartir este momento tan especial contigo. <br/><br/>Para nosotros, lo más importante es poder disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada. <br/><br/>¡Tu presencia es lo que realmente deseamos! <br/><br/>Además, te pedimos amablemente que evites usar el color azul rey, ya que lo hemos reservado para un detalle especial. Esperamos verte radiante y elegante. <br/><br/>¡Te queremos y por eso deseamos compartir este día tan especial contigo!</h3>
+                      <% } %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% } %>
             <div id="fh5co-started" class="fh5co-bg" style="background-image:url(/images/gifboda.gif),url(/images/img_bg_6.jpg);">
               <div class="overlay"></div>
               <% if (isFamily) { %>
@@ -363,14 +379,14 @@
           <!-- Main -->
           <script src="/js/main.js"></script>
           <script>
-            var d = new Date(new Date("June 16, 2023").getTime());
+            var d = new Date(new Date("August 4, 2023").getTime());
             var today = new Date();
             today.setHours(0, 0, 0, 0);
             
             if (d.getTime() === today.getTime()) {
             	document.querySelector(' .simply-countdown-one').innerHTML = '<h2>¡HOY!</h2>';
             } else if (d < today) {
-            	document.querySelector('.simply-countdown-one').innerHTML = '<h2>El 16 de Junio de 2023</h2>'
+            	document.querySelector('.simply-countdown-one').innerHTML = '<h2>El 4 de Agosto de 2023</h2>'
             		;
             } else {
             	simplyCountdown('.simply-countdown-one', {
