@@ -20,16 +20,16 @@ app.get('/', function (req, res) {
     const userLang = accept.language(['en', 'es', 'ca', 'nl', 'pt']); // List the languages you support
     switch (userLang) {
         case 'en':
-            res.render('index_en', { isPlural: false, params: [] }); // Render the English version of the HTML file
+            res.render('index', { isPlural: false, params: [] }); // Render the English version of the HTML file
             break;
         case 'ca':
-            res.render('index_ca', { isPlural: false, params: [] }); // Render the Catalan version of the HTML file
+            res.render('index', { isPlural: false, params: [] }); // Render the Catalan version of the HTML file
             break;
         case 'nl':
-            res.render('index_nl', { isPlural: false, params: [] }); // Render the Dutch version of the HTML file
+            res.render('index', { isPlural: false, params: [] }); // Render the Dutch version of the HTML file
             break;
         case 'pt':
-            res.render('index_pt', { isPlural: false, params: [] }); // Render the Portuguese version of the HTML file
+            res.render('index', { isPlural: false, params: [] }); // Render the Portuguese version of the HTML file
             break;
         default:
             res.render('index', { isPlural: false, params: [] }); // Render the Spanish version (default) of the HTML file
@@ -46,16 +46,16 @@ app.get('/:params/:plural/:family', function (req, res) {
 
     switch (userLang) {
         case 'en':
-            res.render('index_en', { params, isPlural, isFamily }); // Render the English version of the HTML file
+            res.render('index', { params, isPlural, isFamily }); // Render the English version of the HTML file
             break;
         case 'ca':
-            res.render('index_ca', { params, isPlural, isFamily }); // Render the Catalan version of the HTML file
+            res.render('index', { params, isPlural, isFamily }); // Render the Catalan version of the HTML file
             break;
         case 'nl':
-            res.render('index_nl', { params, isPlural, isFamily }); // Render the Dutch version of the HTML file
+            res.render('index', { params, isPlural, isFamily }); // Render the Dutch version of the HTML file
             break;
         case 'pt':
-            res.render('index_pt', { params, isPlural, isFamily }); // Render the Portuguese version of the HTML file
+            res.render('index', { params, isPlural, isFamily }); // Render the Portuguese version of the HTML file
             break;
         default:
             res.render('index', { params, isPlural, isFamily }); // Render the Spanish version (default) of the HTML file

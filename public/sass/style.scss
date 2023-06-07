@@ -7,8 +7,8 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #F14E95 !default;
-$brand-secondary: #118DF0 !default; 
+$brand-primary: #264ef8 !default;
+$brand-secondary: #264ef8 !default; 
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -317,12 +317,12 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event,
 .fh5co-bg {
 	background-size: cover;
-	background-position: top center;
+	background-position: 65% 100%;
 	background-repeat: no-repeat;
 	position: relative;
 }
 .fh5co-bg {
-	background-position: center center;
+	background-position:65% 100%;
 	width: 100%;
 	float: left;
 	position: relative;
@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 		> .timeline-badge {
 			background-size: cover;
-			background-position: top center;
+			background-position:65% 100%;
 			background-repeat: no-repeat;
 			position: relative;
 			color: #fff;
@@ -1530,285 +1530,3 @@ form {
 	}	
 }
 
-
-
-// Burger Menu
-.fh5co-nav-toggle {
-  width:25px;
-  height:25px;
-  cursor: pointer;
-  text-decoration: none;
-  &.active i {
-		&::before, &::after {
-			background: $brand-darker;
-		}
-  }
-  &:hover, &:focus, &:active {
-  	outline: none;
-  	border-bottom: none!important;
-  }
-  i {
-  	position: relative;
-	  display: inline-block;
-	  width: 25px;
-	  height: 2px;
-	  color: #252525;
-	  font:bold 14px/.4 Helvetica;
-	  text-transform: uppercase;
-	  text-indent:-55px;
-	  background: #252525;
-	  transition: all .2s ease-out;
-		 &::before, &::after {
-	  	content:'';
-		  width: 25px;
-		  height: 2px;
-		  background: #252525;
-		  position: absolute;
-		  left:0;
-		  transition:all .2s ease-out;
-	  }
-  }
-  &.fh5co-nav-white {
-  	> i {
-  		color:$brand-white;
-  		background: $brand-white;
-  		&::before, &::after {
-  			background: $brand-white;
-  		}
-  	}
-  }
-}
-
-.fh5co-nav-toggle i::before {
-  top: -7px;
-}
-.fh5co-nav-toggle i::after {
-  bottom: -7px;
-}
-.fh5co-nav-toggle:hover i::before {
-  top: -10px;
-}
-.fh5co-nav-toggle:hover i::after {
-  bottom: -10px;
-}
-.fh5co-nav-toggle.active i {
-	background: transparent;
-}
-.fh5co-nav-toggle.active i::before {
-  top:0;
-  -webkit-transform: rotateZ(45deg);
-     -moz-transform: rotateZ(45deg);
-      -ms-transform: rotateZ(45deg);
-       -o-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-}
-.fh5co-nav-toggle.active i::after {
-  bottom:0;
-  -webkit-transform: rotateZ(-45deg);
-     -moz-transform: rotateZ(-45deg);
-      -ms-transform: rotateZ(-45deg);
-       -o-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
-}
-.fh5co-nav-toggle {
-  position: absolute;
-  right: 0px;
-  top: 10px;
-  // top: 100px;
-  // left: -100px;;
-  z-index: 21;
-  padding: 6px 0 0 0;
-  display: block;
-  margin: 0 auto;
-  display: none;
-  // background: #f86942;
-  height: 44px;
-  width: 44px;
-  z-index: 2001;
-  border-bottom: none!important;
-  @media screen and (max-width: $screen-sm) {
-  	display: block;
-  }
-}
-
-// Buttons
-.btn {
-	margin-right: 4px;
-	margin-bottom: 4px;
-	font-family: $font-primary;
-	font-size: 16px;
-	font-weight: 400;
-	@include border-radius(30px);
-	@include transition(.5s);
-	padding: 8px 20px;
-	&.btn-md {
-		padding: 8px 20px!important;
-	}
-	&.btn-lg {
-		padding: 18px 36px!important;
-	}
-	&:hover, &:active, &:focus {
-		box-shadow: none!important;
-		outline: none!important;
-	}
-}
-.btn-primary {
-	background: $brand-primary;
-	color: $brand-white;
-	border: 2px solid $brand-primary;
-	&:hover, &:focus, &:active {
-		background: lighten($brand-primary, 5%)!important;
-		border-color: lighten($brand-primary, 5%)!important;
-	}
-	&.btn-outline {
-		background: transparent;
-		color: $brand-primary;
-		border: 2px solid $brand-primary;
-		&:hover, &:focus, &:active {
-			background: $brand-primary;
-			color: $brand-white;
-		}
-	}
-}
-.btn-success {
-	background: $brand-success;
-	color: $brand-white;
-	border: 2px solid $brand-success;
-	&:hover, &:focus, &:active {
-		background: darken($brand-success, 5%)!important;
-		border-color: darken($brand-success, 5%)!important;
-	}
-	&.btn-outline {
-		background: transparent;
-		color: $brand-success;
-		border: 2px solid $brand-success;
-		&:hover, &:focus, &:active {
-			background: $brand-success;
-			color: $brand-white;
-		}
-	}
-}
-.btn-info {
-	background: $brand-info;
-	color: $brand-white;
-	border: 2px solid $brand-info;
-	&:hover, &:focus, &:active {
-		background: darken($brand-info, 5%)!important;
-		border-color: darken($brand-info, 5%)!important;
-	}
-	&.btn-outline {
-		background: transparent;
-		color: $brand-info;
-		border: 2px solid $brand-info;
-		&:hover, &:focus, &:active {
-			background: $brand-info;
-			color: $brand-white;
-		}
-	}
-}
-.btn-warning {
-	background: $brand-warning;
-	color: $brand-white;
-	border: 2px solid $brand-warning;
-	&:hover, &:focus, &:active {
-		background: darken($brand-warning, 5%)!important;
-		border-color: darken($brand-warning, 5%)!important;
-	}
-	&.btn-outline {
-		background: transparent;
-		color: $brand-warning;
-		border: 2px solid $brand-warning;
-		&:hover, &:focus, &:active {
-			background: $brand-warning;
-			color: $brand-white;
-		}
-	}
-}
-.btn-danger {
-	background: $brand-danger;
-	color: $brand-white;
-	border: 2px solid $brand-danger;
-	&:hover, &:focus, &:active {
-		background: darken($brand-danger, 5%)!important;
-		border-color: darken($brand-danger, 5%)!important;
-	}
-	&.btn-outline {
-		background: transparent;
-		color: $brand-danger;
-		border: 2px solid $brand-danger;
-		&:hover, &:focus, &:active {
-			background: $brand-danger;
-			color: $brand-white;
-		}
-	}
-}
-
-.btn-outline {
-	background: none;
-	border: 2px solid lighten($brand-black, 50%);
-	font-size: 16px;
-	@include transition(.3s);
-	&:hover, &:focus, &:active {
-		box-shadow: none;
-	}
-}
-
-.btn.with-arrow {
-	position: relative;
-	@include transition(.3s);
-	i {
-		visibility: hidden;
-		opacity: 0;
-		position: absolute;
-		right: 0px;
-		top: 50%;
-		margin-top: -8px;
-		@include transition(.2s);
-	}
-	&:hover {
-		padding-right: 50px;
-		i {
-			color: $brand-white;
-			right: 18px;
-			visibility: visible;
-			opacity: 1;
-		}
-	}
-}
-// Form Input Field
-.form-control {
-	box-shadow: none;
-	background: transparent;
-	border: 2px solid rgba(0, 0, 0, 0.1);
-	height: 54px;
-	font-size: 18px;
-	font-weight: 300;
-  	&:active, &:focus {
-  		outline: none;
-		box-shadow: none;
-		border-color: $brand-primary;
-  }
-}
-
-.row-pb-md {
-	padding-bottom: 4em!important;
-}
-.row-pb-sm {
-	padding-bottom: 2em!important;
-}
-
-.fh5co-loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../images/loader.gif) center no-repeat #fff;
-}
-
-.animate-box {
-	.js & {
-		opacity: 0;
-	}
-}

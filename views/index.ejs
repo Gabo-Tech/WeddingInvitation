@@ -56,55 +56,17 @@
         <body>
           <div class="fh5co-loader"></div>
           <div id="page">
-            <nav class="fh5co-nav" role="navigation">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-2">
-                    <div id="fh5co-logo"><a href="/index.html"><strong>I&G</strong></a></div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-            <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(/images/img_bg_2.jpg); background-size: cover; background-position: top center; background-repeat: no-repeat; position: relative;">
-              <style>
-                /* Mobile devices */
-                @media only screen and (max-width: 768px) {
-                  #fh5co-header.fh5co-cover {
-                    background-position: -341px 0px !important;
-                  }
-                }
-          
-                /* Tablets */
-                @media only screen and (min-width: 768px) and (max-width: 1024px) {
-                  #fh5co-header.fh5co-cover {
-                    background-position: -341px 0px !important;
-                  }
-                }
-          
-                /* Landscape tablets */
-                @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-                  #fh5co-header.fh5co-cover {
-                    background-position: -341px 0px !important;
-                  }
-                }
-          
-                /* Desktops and laptops */
-                @media only screen and (min-width: 1366px) {
-                  #fh5co-header.fh5co-cover {
-                    background-position: center center !important;
-                  }
-                }
-              </style>
+            <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-position: 65% 100% !important;background-image:url(/images/img_bg_2.jpg); background-size: cover; background-position: top center; background-repeat: no-repeat; position: relative;padding-bottom: 100vh;" >
               <div class="overlay"></div>
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8 col-md-offset-2 text-center">
-                    <div class="display-t">
+                  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 5rem;">
+                    <div class="display-t" style="margin-bottom: 5rem;">
                       <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                        <h1>Isaura &amp; Gabriel</h1>
-                        <h2>¡Nos Casamos!</h2>
+                        <h1 style="font-size:6rem;padding-top: 22rem;">Isaura y Gabriel</h1>
+                        <h2 style="font-size:4rem;padding-top: 2rem;">¡Nos Casamos!</h2>
                         <div class="simply-countdown simply-countdown-one"></div>
-                        <p><a href="#confirma" class="btn btn-default btn-sm">
+                        <p><a style="margin-bottom: 5rem;" href="#confirma" class="btn btn-default btn-sm">
                           <% if (isPlural) { %>
                           ¡Acompáñadnos!
                           <% } else { %>
@@ -118,7 +80,7 @@
                 </div>
               </div>
             </header>
-            <div id="fh5co-couple">
+            <div id="fh5co-couple" style="height: 100vh;">
               <div class="container">
                 <div class="row">
                   <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -133,58 +95,66 @@
                     <% } else { %>
                     <h3>¡Es un placer poder invitarte a nuestra boda!</h3>
                     <% } %>
-                    <p>4 de Agosto de 2023, Valéncia, España</p>
+                    <p>4 de Agosto de 2023<br/>Valéncia, España</p>
                   </div>
                 </div>
-                <div class="couple-wrap animate-box">
-                  <div class="couple-half">
+                <div style="display: flex; flex-direction: column; justify-content: center;align-items: center;" class="couple-wrap animate-box">
+                  <!-- <div id="heart">
+                    <div id="heart" id="heart1"style="background-image:url(../images/fotodos.jpeg);
+                    background-size: cover;"></div>
+                  </div> -->
 
-                    <div class="groom">
+                  <img src="/images/fotodos.jpeg" style="border-radius: 50% !important;height: 30rem;" alt="">
+                 <div style="display: flex;padding-top: 5rem;">
+                  <div class="couple-half" style="text-align: center;">
+                    <h3><strong>Gabriel Clemente Ramos</strong></h3>
+                    <!-- <div class="groom">
                       <img src="/images/bride.jpg" alt="bride" class="img-responsive">
-                    </div>
-                    <div class="desc-groom">
-                      <h3>Isaura Diaz Rangel</h3>
-                    </div>
-
+                    </div> -->
+    
                
                   </div>
-                  <p class="heart text-center"><i class="icon-heart2"></i></p>
-                  <div class="couple-half">
-
-                    <div class="bride">
+                  <!-- <p class="heart text-center" style="padding: 0%; margin: 0%;"><i class="icon-heart2"></i></p> -->
+                  <div class="couple-half" style="text-align: center;">
+                    <h3><strong>Isaura Diaz<br/>Rangel</strong></h3>
+                    <!-- <div class="bride">
                       <img src="/images/groom.jpg" alt="groom" class="img-responsive">
-                    </div>
-                    <div class="desc-bride">
-                      <h3>Gabriel Clemente Ramos</h3>
-                    </div>
+                    </div> -->
 
                 
                   </div>
+                 </div>
                 </div>
               </div>
             </div>
-            <div id="fh5co-event" class="fh5co-bg" style="background-image:url(/images/img_bg_3.jpg); background-size: cover; background-position: top center; background-repeat: no-repeat; position: relative;">
+            <div id="fh5co-event" class="fh5co-bg" style="height:100vh;background-image:url(/images/img_bg_6.jpg); background-size: cover; background-position: 16.5%100%!important; background-repeat: no-repeat; position: relative;padding-bottom: 115vh;">
               <style>
                 /* Mobile devices */
                 @media only screen and (max-width: 768px) {
                   #fh5co-event.fh5co-bg {
-                    background-position: -1206px 0px !important;
+                    height:100vh;
+                    background-position: 76%100%!important;
+                    margin-bottom: 10rem
                   }
                 }
               </style>
-              <div class="overlay"></div>
-              <div class="container">
+              <div class="overlay" ></div>
+              <div class="container" >
                 <div class="row">
                   <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <span>Nuestro día especial</span>
                     <h2>¿Cuando y donde?</h2>
+                    <br/> 
+                    <p style="color:#ffffff">Salones y Jardínes</p>
+                    <h3 style="color:#ffffff">MEDITERRÁNEO</h3>
+                    <p style="color:#ffffff">Albal</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="display-t">
                     <div class="display-tc">
                       <div class="col-md-10 col-md-offset-1">
-                        <div class="col-md-6 col-sm-6 text-center">
+                        <div class="col-md-12 col-sm-12 text-center">
                           <div class="event-wrap animate-box">
                             <h3>Ceremonia</h3>
                             <div class="event-col">
@@ -198,31 +168,32 @@
                               <span>Agosto, 2023</span>
                             </div>
                             <% if (isFamily) { %>
-                                  <p>La ceremonia será en el Jardín Mediterráneo con sus fuentes y gran variedad de plantas aromáticas es el lugar perfecto donde celebrar nuestra boda, aquí será el cóctel de bienvenida después de la ceremonia, se accede directamente desde el parking por las puertas grandes, no tiene perdida.</p>
-                              <% } else { %>
-                                <p>La ceremonia será emitida por Jira así que esperamos poder <% if (isPlural) { %>veros y responder vuestros<% } else { %>verte y responder tus<% } %> comentarios, obviamente más tarde cuando terminemos de celebrarlo, ¡muchas grácias!</p>
-                              <% } %>
+                              <div class="col-md-12 col-sm-12 text-center">
+                               
+                              <h3>Convite</h3>
+                              <div class="event-col">
+                                <i class="icon-clock"></i>
+                                <span>20:00</span>
+                                <span>22:00</span>
+                              </div>
+                              <div class="event-col">
+                                <i class="icon-calendar"></i>
+                                <span>Viernes 4</span>
+                                <span>Agosto, 2023</span>
+                              </div>
+                            </div>
                           </div>
+                          <% } else { %>
+                          <% } %>
                         </div>
+                        <br/>
                         <% if (isFamily) { %>
-                        <div class="col-md-6 col-sm-6 text-center">
-                          <div class="event-wrap animate-box">
-                            <h3>Convite</h3>
-                            <div class="event-col">
-                              <i class="icon-clock"></i>
-                              <span>20:00</span>
-                              <span>22:00</span>
-                            </div>
-                            <div class="event-col">
-                              <i class="icon-calendar"></i>
-                              <span>Viernes 4</span>
-                              <span>Agosto, 2023</span>
-                            </div>
-                            <p>El convite será en el Salón Azul es un salón de estilo clásico, inspirado en la antigua Grecia. Consta de tapices y cúpulas azules, que junto a sus lámparas de araña ofrecen un ambiente distinguido que nos ha enamorado. Se accede directamente desde el jardín, por las puertas a mano derecha y todo recto</p>
-                          </div>
+                        <div id="mapa" class="col-md-8 event-wrap" style="margin-bottom: 3rem;margin-top: 2rem;text-align: center;">
+                          <h3 >Ver la ubicación</h3>
+                          <!-- <svg  width="50" height="50" fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 395.71 395.71" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path> </g> </g></svg> -->
                         </div>
                         <% } else { %>
-                        <% } %>
+                          <% } %>
                       </div>
                     </div>
                   </div>
@@ -230,7 +201,7 @@
               </div>
             </div>
             <% if (isFamily) { %>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4334584306298!2d-0.4082468175694906!3d39.390924432999626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604c3226d83549%3A0xbcb717f4dd1b6fb3!2sMediterr%C3%A1neo%20Restaurant%20i%20Salons!5e0!3m2!1sen!2sfr!4v1686064067940!5m2!1sen!2sfr" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300rem" width="100%" allowfullscreen></iframe>
+            <iframe  id="mapaIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.4334584306298!2d-0.4082468175694906!3d39.390924432999626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604c3226d83549%3A0xbcb717f4dd1b6fb3!2sMediterr%C3%A1neo%20Restaurant%20i%20Salons!5e0!3m2!1sen!2sfr!4v1686064067940!5m2!1sen!2sfr" style="display:none;border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300rem" width="100%" allowfullscreen></iframe>
             <% } %>
             <% if (isFamily) { %>
             <div id="fh5co-couple">
@@ -241,12 +212,12 @@
                     <% if (isPlural) { %>
                     <h2>¡Queremos que estéis con nosotros!</h2>
                     <% } else { %>
-                    <h2>¡Queremos que estés con nosotros!</h2>
+                    <h2>¡Compartir este momento tan especial contigo será lo más!</h2>
                     <% } %>
-                    <% if (isPlural) { %>
+                    <% if (isPlural) { %>        
                       <h3>Os extendemos una cordial invitación porque sois personas importantes para nosotros y queremos compartir este momento tan especial con vosotros. <br/><br/>Para nosotros, lo más importante es poder disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada. <br/><br/>¡Vuestra presencia es lo que realmente deseamos! <br/><br/>Además, os pedimos amablemente que evitéis usar el color azul rey, ya que lo hemos reservado para un detalle especial. Esperamos veros a todos radiantes y elegantes. <br/><br/>¡Os queremos y por eso deseamos compartir este día tan especial con vosotros!</h3>
                       <% } else { %>
-                      <h3>Te extendemos una cordial invitación porque eres una persona importante para nosotros y queremos compartir este momento tan especial contigo. <br/><br/>Para nosotros, lo más importante es poder disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada. <br/><br/>¡Tu presencia es lo que realmente deseamos! <br/><br/>Además, te pedimos amablemente que evites usar el color azul rey, ya que lo hemos reservado para un detalle especial. Esperamos verte radiante y elegante. <br/><br/>¡Te queremos y por eso deseamos compartir este día tan especial contigo!</h3>
+                      <h3>¡Lo importante es disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada! 😉<br/><br/><br/><br/><strong style="font-size:5rem;color:#264ef8;font-family:'Sacramento', Arial, serif;font-weight:900;">Recuerda:</strong><br/><br/><strong>·</strong> Si tienes alguna intolerancia alimenticia o alergia comunicanos-lo.<br/><br/><strong>·</strong> Si tienes algún problema para confirmar la asistencia antes del 25 de Julio por la web contactanos.<br/><br/><strong>·</strong> Dress Code: Formal.<br/><br/><strong>·</strong> Queda reservado el color azul rey para un detalle especial.</h3>
                       <% } %>
                   </div>
                 </div>
@@ -285,9 +256,9 @@
                         <a href="https://www.bodas.net/web/isaura-and-gabriel/confirmatuasistencia-3" target="_blank" >
                         <button type="button" class="btn btn-default btn-block mx-auto d-block">
                         <% if (isPlural) { %>
-                        ¡Vamos a la boda!
+                        ¡Nos vamos de boda!
                         <% } else { %>
-                        ¡Voy a la boda!
+                          ¡Nos vamos de boda!
                         <% } %>
                         </button>
                         </a>
@@ -379,6 +350,15 @@
           <!-- Main -->
           <script src="/js/main.js"></script>
           <script>
+            document.getElementById('mapa').addEventListener('click', function() {
+              const mapaIframe = document.getElementById('mapaIframe');
+              if (mapaIframe.style.display === 'none' || mapaIframe.style.display === '') {
+                mapaIframe.style.display = 'block';
+              } else {
+                mapaIframe.style.display = 'none';
+              }
+            });
+
             var d = new Date(new Date("August 4, 2023").getTime());
             var today = new Date();
             today.setHours(0, 0, 0, 0);

@@ -59,7 +59,7 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #264ef8;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -68,7 +68,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #F14E95;
+  color: #264ef8;
   outline: none;
   text-decoration: none;
 }
@@ -92,17 +92,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F14E95;
+  background: #264ef8;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F14E95;
+  background: #264ef8;
 }
 
 ::selection {
   color: #fff;
-  background: #F14E95;
+  background: #264ef8;
 }
 
 .fh5co-nav {
@@ -239,7 +239,7 @@ figure {
 }
 
 .fh5co-nav ul li.btn-cta a {
-  color: #F14E95;
+  color: #264ef8;
 }
 
 .fh5co-nav ul li.btn-cta a span {
@@ -272,13 +272,13 @@ figure {
 #fh5co-event,
 .fh5co-bg {
   background-size: cover;
-  background-position: top center;
+  background-position:65% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .fh5co-bg {
-  background-position: center center;
+  background-position: top center;
   width: 100%;
   float: left;
   position: relative;
@@ -495,7 +495,7 @@ figure {
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
   display: block;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -623,7 +623,7 @@ figure {
 
 .timeline>li>.timeline-badge {
   background-size: cover;
-  background-position: top center;
+  background-position: 65% 100%;
   background-repeat: no-repeat;
   position: relative;
   color: #fff;
@@ -749,7 +749,7 @@ figure {
   margin: 0 0 10px 1%;
   list-style: none;
   min-height: 400px;
-  background-position: center center;
+  background-position: 65% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   float: left;
@@ -880,7 +880,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: #264ef8;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -902,7 +902,7 @@ figure {
 }
 
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  color: #264ef8;
   position: absolute;
   left: 0;
   top: .05em;
@@ -1009,7 +1009,7 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #F14E95;
+  color: #264ef8;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -1079,7 +1079,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: #264cf86b;
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1187,7 +1187,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #264ef8;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1213,7 +1213,7 @@ form label {
 
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #264ef8;
   font-size: 30px;
 }
 
@@ -1327,7 +1327,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #F14E95;
+  color: #264ef8;
 }
 
 .feature-center p,
@@ -1354,7 +1354,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #264ef8;
   font-family: "Sacramento", Arial, serif;
 }
 
@@ -1395,7 +1395,7 @@ form label {
 }
 
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
+  color: #264ef8;
   font-weight: 300;
 }
 
@@ -1502,7 +1502,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #F14E95;
+  color: #264ef8;
 }
 
 .feature-left .feature-copy {
@@ -1581,7 +1581,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: #264ef8;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1636,7 +1636,7 @@ form label {
 
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #264ef8;
 }
 
 #fh5co-offcanvas {
@@ -1777,7 +1777,7 @@ form label {
   outline: none;
 }
 
-.fh5co-nav-toggle {
+/* .fh5co-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1886,8 +1886,8 @@ form label {
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
-  }
-}
+  } */
+/* } */
 
 .btn {
   margin-right: 4px;
@@ -1921,28 +1921,28 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: #264ef8;
   color: #fff;
-  border: 2px solid #F14E95;
+  border: 2px solid #264ef8;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #264ef8 !important;
+  border-color: #264ef8 !important;
 }
 
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: #264ef8;
+  border: 2px solid #264ef8;
 }
 
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #F14E95;
+  background: #264ef8;
   color: #fff;
 }
 
@@ -2108,7 +2108,7 @@ form label {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #264ef8;
 }
 
 .row-pb-md {
@@ -2134,3 +2134,54 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background-color: #fff;
+ }
+ 
+ #heart:before,
+ #heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+ }
+ 
+ #heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin :100% 100%;
+
+ }
+
+#heart1{
+  background-image:url(../images/fotodos.jpeg);
+                    background-size: cover;
+}
