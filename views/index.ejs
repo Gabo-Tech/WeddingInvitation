@@ -1,16 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
-  <![endif]-->
-  <!--[if IE 7]>         
-  <html class="no-js lt-ie9 lt-ie8">
-    <![endif]-->
-    <!--[if IE 8]>         
-    <html class="no-js lt-ie9">
-      <![endif]-->
-      <!--[if gt IE 8]><!-->
       <html class="no-js">
-        <!--<![endif]-->
         <head>
           <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +9,6 @@
           <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
           <meta name="author" content="FREEHTML5.CO" />
           <script src="../index.js"></script>
-          <!-- Facebook and Twitter integration -->
           <meta property="og:title" content="" />
           <meta property="og:image" content="" />
           <meta property="og:url" content="" />
@@ -33,25 +21,14 @@
           <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
             type='text/css'>
           <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-          <!-- Animate.css -->
           <link rel="stylesheet" href="/css/animate.css">
-          <!-- Icomoon Icon Fonts-->
           <link rel="stylesheet" href="/css/icomoon.css">
-          <!-- Bootstrap  -->
           <link rel="stylesheet" href="/css/bootstrap.css">
-          <!-- Magnific Popup -->
           <link rel="stylesheet" href="/css/magnific-popup.css">
-          <!-- Owl Carousel  -->
           <link rel="stylesheet" href="/css/owl.carousel.min.css">
           <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-          <!-- Theme style  -->
           <link rel="stylesheet" href="/css/style.css">
-          <!-- Modernizr JS -->
           <script src="/js/modernizr-2.6.2.min.js"></script>
-          <!-- FOR IE9 below -->
-          <!--[if lt IE 9]>
-          <script src="js/respond.min.js"></script>
-          <![endif]-->
         </head>
         <body>
           <div class="fh5co-loader"></div>
@@ -99,29 +76,13 @@
                   </div>
                 </div>
                 <div style="display: flex; flex-direction: column; justify-content: center;align-items: center;" class="couple-wrap animate-box">
-                  <!-- <div id="heart">
-                    <div id="heart" id="heart1"style="background-image:url(../images/fotodos.jpeg);
-                    background-size: cover;"></div>
-                  </div> -->
-
                   <img src="/images/fotodos.jpeg" style="border-radius: 50% !important;height: 30rem;" alt="">
                  <div style="display: flex;padding-top: 5rem;">
                   <div class="couple-half" style="text-align: center;">
                     <h3><strong>Gabriel Clemente Ramos</strong></h3>
-                    <!-- <div class="groom">
-                      <img src="/images/bride.jpg" alt="bride" class="img-responsive">
-                    </div> -->
-    
-               
                   </div>
-                  <!-- <p class="heart text-center" style="padding: 0%; margin: 0%;"><i class="icon-heart2"></i></p> -->
                   <div class="couple-half" style="text-align: center;">
-                    <h3><strong>Isaura Diaz<br/>Rangel</strong></h3>
-                    <!-- <div class="bride">
-                      <img src="/images/groom.jpg" alt="groom" class="img-responsive">
-                    </div> -->
-
-                
+                    <h3><strong>Isaura Diaz<br/>Rangel</strong></h3>                
                   </div>
                  </div>
                 </div>
@@ -129,7 +90,6 @@
             </div>
             <div id="fh5co-event" class="fh5co-bg" style="height:100vh;background-image:url(/images/img_bg_6.jpg); background-size: cover; background-position: 16.5%100%!important; background-repeat: no-repeat; position: relative;padding-bottom: 115vh;">
               <style>
-                /* Mobile devices */
                 @media only screen and (max-width: 768px) {
                   #fh5co-event.fh5co-bg {
                     height:100vh;
@@ -145,9 +105,12 @@
                     <span>Nuestro día especial</span>
                     <h2>¿Cuando y donde?</h2>
                     <br/> 
+                    <% if (isFamily) { %>
                     <p style="color:#ffffff">Salones y Jardínes</p>
                     <h3 style="color:#ffffff">MEDITERRÁNEO</h3>
                     <p style="color:#ffffff">Albal</p>
+                    <% } else { %>
+                      <% } %>
                   </div>
                 </div>
                 <div class="row">
@@ -169,7 +132,6 @@
                             </div>
                             <% if (isFamily) { %>
                               <div class="col-md-12 col-sm-12 text-center">
-                               
                               <h3>Convite</h3>
                               <div class="event-col">
                                 <i class="icon-clock"></i>
@@ -190,7 +152,6 @@
                         <% if (isFamily) { %>
                         <div id="mapa" class="col-md-8 event-wrap" style="margin-bottom: 3rem;margin-top: 2rem;text-align: center;">
                           <h3 >Ver la ubicación</h3>
-                          <!-- <svg  width="50" height="50" fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 395.71 395.71" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path> </g> </g></svg> -->
                         </div>
                         <% } else { %>
                           <% } %>
@@ -210,12 +171,12 @@
                   <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <div id="invitation"></div>
                     <% if (isPlural) { %>
-                    <h2>¡Queremos que estéis con nosotros!</h2>
+                    <h2>¡Compartir este momento tan especial con vosotros será lo más!</h2>
                     <% } else { %>
                     <h2>¡Compartir este momento tan especial contigo será lo más!</h2>
                     <% } %>
                     <% if (isPlural) { %>        
-                      <h3>Os extendemos una cordial invitación porque sois personas importantes para nosotros y queremos compartir este momento tan especial con vosotros. <br/><br/>Para nosotros, lo más importante es poder disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada. <br/><br/>¡Vuestra presencia es lo que realmente deseamos! <br/><br/>Además, os pedimos amablemente que evitéis usar el color azul rey, ya que lo hemos reservado para un detalle especial. Esperamos veros a todos radiantes y elegantes. <br/><br/>¡Os queremos y por eso deseamos compartir este día tan especial con vosotros!</h3>
+                      <h3>¡Lo importante es disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada! 😉<br/><br/><br/><br/><strong style="font-size:5rem;color:#264ef8;font-family:'Sacramento', Arial, serif;font-weight:900;">Recordad:</strong><br/><br/><strong>·</strong> Si teneis alguna intolerancia alimenticia o alergia comunicadnos-lo.<br/><br/><strong>·</strong> Si teneis algún problema para confirmar la asistencia antes del 25 de Julio por la web contactadnos.<br/><br/><strong>·</strong> Dress Code: Formal.<br/><br/><strong>·</strong> Queda reservado el color azul rey para un detalle especial.</h3>
                       <% } else { %>
                       <h3>¡Lo importante es disfrutar juntos, por eso no esperamos ninguna donación ni cobramos entrada! 😉<br/><br/><br/><br/><strong style="font-size:5rem;color:#264ef8;font-family:'Sacramento', Arial, serif;font-weight:900;">Recuerda:</strong><br/><br/><strong>·</strong> Si tienes alguna intolerancia alimenticia o alergia comunicanos-lo.<br/><br/><strong>·</strong> Si tienes algún problema para confirmar la asistencia antes del 25 de Julio por la web contactanos.<br/><br/><strong>·</strong> Dress Code: Formal.<br/><br/><strong>·</strong> Queda reservado el color azul rey para un detalle especial.</h3>
                       <% } %>
@@ -253,7 +214,7 @@
                       <div class="col-md-12 col-sm-4  mx-auto d-block">
                         <div class="col-md-4 col-sm-4">
                         </div>
-                        <a href="https://www.bodas.net/web/isaura-and-gabriel/confirmatuasistencia-3" target="_blank" >
+                        <a href="https://www.bodas.net/web/isaura-and-gabriel" target="_blank" >
                         <button type="button" class="btn btn-default btn-block mx-auto d-block">
                         <% if (isPlural) { %>
                         ¡Nos vamos de boda!
@@ -328,28 +289,60 @@
           <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
           </div>
-          <!-- jQuery -->
+          <audio id="bg-music" src="/audio/audioo.mp3" preload="auto"></audio>
           <script src="/js/jquery.min.js"></script>
-          <!-- jQuery Easing -->
           <script src="/js/jquery.easing.1.3.js"></script>
-          <!-- Bootstrap -->
           <script src="/js/bootstrap.min.js"></script>
-          <!-- Waypoints -->
           <script src="/js/jquery.waypoints.min.js"></script>
-          <!-- Carousel -->
           <script src="/js/owl.carousel.min.js"></script>
-          <!-- countTo -->
           <script src="/js/jquery.countTo.js"></script>
-          <!-- Stellar -->
           <script src="/js/jquery.stellar.min.js"></script>
-          <!-- Magnific Popup -->
           <script src="/js/jquery.magnific-popup.min.js"></script>
           <script src="/js/magnific-popup-options.js"></script>
-          <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
           <script src="/js/simplyCountdown.js"></script>
-          <!-- Main -->
           <script src="/js/main.js"></script>
           <script>
+            function playMusic() {
+              let bgMusic = document.getElementById('bg-music');
+              if (bgMusic.paused) { 
+                bgMusic.loop = true;
+                bgMusic.volume = 0.4;
+                bgMusic.play();
+              }
+            }  
+            window.addEventListener('load', playMusic);
+            window.addEventListener('unload', playMusic);
+            window.addEventListener('resize', playMusic);
+            window.addEventListener('scroll', playMusic);
+            window.addEventListener('keydown', playMusic);
+            window.addEventListener('keyup', playMusic);
+            window.addEventListener('keypress', playMusic);
+            window.addEventListener('click', playMusic);
+            window.addEventListener('dblclick', playMusic);
+            window.addEventListener('mousedown', playMusic);
+            window.addEventListener('mouseup', playMusic);
+            window.addEventListener('mousemove', playMusic);
+            window.addEventListener('mouseover', playMusic);
+            window.addEventListener('mouseout', playMusic);
+            window.addEventListener('mouseenter', playMusic);
+            window.addEventListener('mouseleave', playMusic);
+            window.addEventListener('submit', playMusic);
+            window.addEventListener('change', playMusic);
+            window.addEventListener('focus', playMusic);
+            window.addEventListener('blur', playMusic);
+            window.addEventListener('input', playMusic);
+            window.addEventListener('touchstart', playMusic);
+            window.addEventListener('touchend', playMusic);
+            window.addEventListener('touchmove', playMusic);
+            window.addEventListener('touchcancel', playMusic);
+            window.addEventListener('dragstart', playMusic);
+            window.addEventListener('drag', playMusic);
+            window.addEventListener('dragenter', playMusic);
+            window.addEventListener('dragleave', playMusic);
+            window.addEventListener('dragover', playMusic);
+            window.addEventListener('drop', playMusic);
+            window.addEventListener('dragend', playMusic);
             document.getElementById('mapa').addEventListener('click', function() {
               const mapaIframe = document.getElementById('mapaIframe');
               if (mapaIframe.style.display === 'none' || mapaIframe.style.display === '') {
@@ -358,16 +351,13 @@
                 mapaIframe.style.display = 'none';
               }
             });
-
             var d = new Date(new Date("August 4, 2023").getTime());
             var today = new Date();
             today.setHours(0, 0, 0, 0);
-            
             if (d.getTime() === today.getTime()) {
             	document.querySelector(' .simply-countdown-one').innerHTML = '<h2>¡HOY!</h2>';
             } else if (d < today) {
-            	document.querySelector('.simply-countdown-one').innerHTML = '<h2>El 4 de Agosto de 2023</h2>'
-            		;
+            	document.querySelector('.simply-countdown-one').innerHTML = '<h2>El 4 de Agosto de 2023</h2>';
             } else {
             	simplyCountdown('.simply-countdown-one', {
             		year: d.getFullYear(), month:
