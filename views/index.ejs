@@ -125,7 +125,10 @@
                       <div class="col-md-10 col-md-offset-1">
                         <div class="col-md-12 col-sm-12 text-center">
                           <div class="event-wrap animate-box">
-                            <h3>Ceremonia</h3>
+<div style="display: flex;flex-direction: column;align-items: center;">
+  <div>
+
+  <h3>Ceremonia</h3>
                             <div class="event-col">
                               <i class="icon-clock"></i>
                               <span>De 18:00</span>
@@ -136,8 +139,9 @@
                               <span>Viernes 4</span>
                               <span>Agosto, 2023</span>
                             </div>
-                            <br><br><br><br><br><br><br><br><br><br><br>
+                          </div>
                             <% if (isFamily) { %>
+                            <div>
                               <div class="col-md-12 col-sm-12 text-center">
                               <h3>Convite</h3>
                               <div class="event-col">
@@ -151,9 +155,19 @@
                                 <span>Agosto, 2023</span>
                               </div>
                             </div>
+                            <% } else { %>
+                              <% } %>
+
+
+
+
+                            </div>
+</div>
+
+                          
+
                           </div>
-                          <% } else { %>
-                          <% } %>
+                         
                         </div>
                         <br/>
                         <% if (isFamily) { %>
