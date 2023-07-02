@@ -195,6 +195,37 @@
   <script src="/js/simplyCountdown.js"></script>
   <script src="/js/main.js" defer></script>
   <script>
+let isScrolling = true;
+let scrollTimeout;
+
+function pageScroll() {
+  if (isScrolling) {
+    window.scrollBy(0, 10000);
+    scrollTimeout = setTimeout(pageScroll, 10);
+  }
+}
+
+function startScrolling() {
+  setTimeout(() => {
+    pageScroll();
+  }, 1); // Delay for 5 seconds before starting scrolling
+}
+
+function resetScrollTimeout() {
+  clearTimeout(scrollTimeout);
+  startScrolling();
+}
+
+function setupInteractionListeners() {
+  const interactionEvents = ['scroll', 'mousedown', 'mousemove', 'keypress', 'touchstart'];
+  interactionEvents.forEach((event) => {
+    window.addEventListener(event, resetScrollTimeout);
+  });
+}
+
+// startScrolling();
+// setupInteractionListeners();
+
     function playMusic() {
       let bgMusic = document.getElementById('bg-music');
       if (bgMusic.paused) { 
