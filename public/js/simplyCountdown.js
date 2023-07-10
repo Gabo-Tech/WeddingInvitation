@@ -236,8 +236,6 @@
                     minuteWord = parameters.words.minutes;
                     secondWord = parameters.words.seconds;
                 }
-
-                /* display an inline countdown into a span tag */
                 if (parameters.inline) {
                     countdown.innerHTML =
                         days + ' ' + dayWord + ', ' +
@@ -259,8 +257,6 @@
                     fullCountDown.seconds.word.textContent = secondWord;
                 }
             };
-
-            // Refresh immediately to prevent a Flash of Unstyled Content
             refresh();
             interval = window.setInterval(refresh, parameters.refresh);
         });
