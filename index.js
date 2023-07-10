@@ -39,29 +39,32 @@ app.get('/', function (req, res) {
 
 app.get('/:params/:plural/:family', function (req, res) {
     const params = req.params.params.split('/');
-    const isPlural = req.params.plural === 'p' ? true : false;
-    const isFamily = req.params.family === 'f' ? true : false;
-    const abuela = req.params.plural === 'f' ? true : false;
+    const isPlural = req.params.plural === 'p';
+    const isFamily = req.params.family === 'f';
+    
+    const abuela = (req.params.params.includes('Chema')) || (req.params.plural === 'f');
+  
     const accept = accepts(req);
-    const userLang = accept.language(['en', 'es', 'ca', 'nl', 'pt']); // List the languages you support
-
+    const userLang = accept.language(['en', 'es', 'ca', 'nl', 'pt']);
+  
     switch (userLang) {
-        case 'en':
-            res.render('index_en', { params, isPlural, isFamily, abuela }); // Render the English version of the HTML file
-            break;
-        case 'ca':
-            res.render('index_ca', { params, isPlural, isFamily, abuela }); // Render the Catalan version of the HTML file
-            break;
-        case 'nl':
-            res.render('index_nl', { params, isPlural, isFamily, abuela }); // Render the Dutch version of the HTML file
-            break;
-        case 'pt':
-            res.render('index_pt', { params, isPlural, isFamily, abuela }); // Render the Portuguese version of the HTML file
-            break;
-        default:
-            res.render('index', { params, isPlural, isFamily, abuela }); // Render the Spanish version (default) of the HTML file
+      case 'en':
+        res.render('index_en', { params, isPlural, isFamily, abuela });
+        break;
+      case 'ca':
+        res.render('index_ca', { params, isPlural, isFamily, abuela });
+        break;
+      case 'nl':
+        res.render('index_nl', { params, isPlural, isFamily, abuela });
+        break;
+      case 'pt':
+        res.render('index_pt', { params, isPlural, isFamily, abuela });
+        break;
+      default:
+        res.render('index', { params, isPlural, isFamily, abuela });
     }
-});
+  });
+  
 
 
 let PORT = process.env.PORT;
